@@ -5,7 +5,6 @@ import { education } from '../../data/constants';
 import EducationCard from '../cards/EducationCard';
 import 'react-vertical-timeline-component/style.min.css';
 import StarCanvas from '../canvas/Stars'
-import EarthCanvas from '../canvas/Earth';
 
 
 const Container = styled.div`
@@ -67,7 +66,6 @@ const Education = () => {
                 {education.map((item,index) => (
                     <EducationCard key={`educations-${index}`} education ={item}/>))}
             </VerticalTimeline>
-            {/* <EarthCanvas/> */}
         </Wrapper>
     </Container>    
 )

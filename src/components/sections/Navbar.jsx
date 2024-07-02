@@ -42,10 +42,23 @@ color: ${({ theme }) => theme.primary};
 const ButtonContainer = styled.div`
 width:80%;height:100%;display:flex;align-item:center;justify-content:end;padding:0 6px;border-radius:4px;
 @media screen and (max-width:768px){
-display:none;}
+display:none;
+}
+
 `;
 const GithubButton = styled.a`
-display:flex;align-item:center;justify-content:center;font-size:16px;cursor:pointer;border:1px solid ${({theme}) => theme.primary};padding:4px 30px;border-radius:100px;font-weight:500;color:${({theme}) => theme.primary};transition: all 0.6s ease-in-out;text-decoration:none;&:hover{background-color:${({theme}) => theme.primary};color:${({theme}) => theme.text_primary};}`;
+display:flex;align-item:center;justify-content:center;
+font-size:16px;cursor:pointer;border:1px solid ${({theme}) => theme.primary};
+padding:4px 30px;
+
+border-radius:100px;font-weight:500;color:${({theme}) => theme.primary};
+transition: all 0.6s ease-in-out;text-decoration:none;&:hover{background-color:${({theme}) => theme.primary};
+color:${({theme}) => theme.text_primary};}
+
+
+`;
+
+
 const MobileIcon = styled.div`
 color:${({ theme }) => theme.text_primary};
 height:100%;
@@ -65,7 +78,7 @@ const MobileMenu = styled.ul`
  justify-content:center;
  list-style:none;
  gap:16px;
- padding:12px 40px 24px 60px;
+ padding:12px 0px 24px 60px;
  background:${({ theme }) => theme.card_light + 99};position:absolute;top:80px;right:0;
  transition: all 0.6s ease-in-out;
  transform: ${({isOpen}) => isOpen ? "transitionY(0)":"translateY(-100%)"};
@@ -105,7 +118,7 @@ const Navbar = () => {
                     <NavLink onClick={() => setIsOpen(!isOpen)} href="#Experience">Experience</NavLink>
                     <NavLink onClick={() => setIsOpen(!isOpen)} href="#Projects">Projects</NavLink>
                     <NavLink onClick={() => setIsOpen(!isOpen)} href="#Education">Education</NavLink>   
-                    <GithubButton href={Bio.github} target='_Blank' style={{background:theme.primary,color:theme.text_primary,width:"30%",padding:"2px 0px"}}>Github Profile</GithubButton>
+                    <GithubButton href={Bio.github} target='_Blank' style={{background:theme.primary,color:theme.text_primary,width:"30%",padding:"2px 0px"}}>Github</GithubButton>
                 </MobileMenu>)
             }
             <ButtonContainer>

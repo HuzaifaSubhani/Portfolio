@@ -228,9 +228,9 @@ export const projects = [
     title: "Research Catalyst",
     date: "May 2024",
     description:
-      "Developed an AI-powered research assistant using Python and Streamlit. The tool features document summarization and key point extraction using Gemini Pro. It includes a document-specific Q&A chatbot leveraging NLP, and enhances user experience with text-to-audio conversion of extracted information.",
+      "An AI-powered research assistant using Python and Streamlit, featuring document summarization, key point extraction with Gemini Pro, a Q&A chatbot using NLP, and text-to-audio.",
     image:
-      "https://drive.google.com/drive/folders/1TNH_bZXZsCD1oXfUPh0cXBqlopBx86OY",
+      "https://drive.google.com/file/d/1q1DSN2PoLepNSHOKljEnB8z-zNe6Adxy/view?usp=sharing",
     tags: ["StreamLit", "Python", "NLP", "GeminiPro", "ML"],
     category: ["web app","all"],
     github: "https://github.com/HuzaifaSubhani/Resarch-Catalyst",
@@ -239,12 +239,12 @@ export const projects = [
   },
   {
     id: 1,
-    title: "artcosmetics",
+    title: "ArtCosmetics",
     date: "Jan 2023",
     description:
-      "Created a comprehensive e-commerce website for Art Cosmetics using Shopify. The site features a sleek, user-friendly design tailored to showcase a wide range of skincare products. It includes functionalities such as a secure payment gateway, user reviews, and an intuitive navigation system to enhance the shopping experience for customers.",
+      "Created a sleek, user-friendly e-commerce site for Art Cosmetics on Shopify, featuring secure payment, user reviews, and intuitive navigation for diverse skincare products.",
     image:
-      "https://drive.google.com/drive/folders/1TNH_bZXZsCD1oXfUPh0cXBqlopBx86OY",
+      "https://drive.google.com/file/d/1aD7ZHYuMhLNj5nLBEU_h1arr7bXcuav6/view?usp=sharing",
     tags: [
       "Html",
       "Css",
@@ -252,6 +252,7 @@ export const projects = [
       "Shopify",
     ],
     category: ["shopify","all"],
+    github: "https://artcosmetics.skin/",
     webapp: "https://artcosmetics.skin/",
   },
   {
@@ -259,11 +260,12 @@ export const projects = [
     title: "PakTherm",
     date: "Feb 2024",
     description:
-      "I resolved multiple bugs on the Pak Therm website using WordPress. This involved troubleshooting and fixing issues related to website functionality, enhancing performance, and ensuring a smooth user experience for visitors.",
+      "Resolved multiple technical bugs on the Pak Therm website using WordPress, significantly enhancing site performance and ensuring a seamless user experience for visitors.",
     image:
       "https://drive.google.com/drive/folders/1TNH_bZXZsCD1oXfUPh0cXBqlopBx86OY",
     tags: ["Wordpress", "Html", "Css", "Js", "ElementorPro"],
     category: ["wordpress","all"],
+    github: "https://www.paktherm.com.pk/",
     webapp: "https://www.paktherm.com.pk/",
 
   },

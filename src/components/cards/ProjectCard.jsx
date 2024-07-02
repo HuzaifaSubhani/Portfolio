@@ -39,7 +39,7 @@ const Details = styled.div`
 width: 100%;
 display: flex;
 flex-direction: column;
-gap: 0px;
+// gap: 0px;
 flex-wrap: wrap;
 padding: 0px 2px;`;
 const Title = styled.div`
@@ -67,23 +67,11 @@ color: ${({theme}) => theme.text_secondary+99};
 overflow: hidden;
 margin-top: 8px;
 display: -webkit-box;
--webkit-line-clamp: 3;
+-webkit-line-clamp: 6;
 -webkit-box-orient: vertical;
 text-overflow: ellipsis;
 `;
-const Members = styled.div`
-display: flex;
-align-items: center;
-padding-left: 10px;
-`;
-const Avatar = styled.img`
-width: 38px;
-height: 38px;
-border-radius: 50%;
-background-color: 2px solid ${({theme}) => theme.white};  
-box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
-border: 3px solid ${({theme}) => theme.card};
-`;
+
 const Button = styled.a`
 color: ${({theme}) => theme.text_primary};
 text-decoration: none;
@@ -96,20 +84,16 @@ text-align: center;
 const ProjectCard = ({project}) => {
   return (
     <Card>
-        <Image src={project.Image} />
-        <Tags></Tags>
+        <Image src={project.image} />
+        {/* <Tags>{project.tags} </Tags> */}
         <Details>
-            <Title>{project.Title}</Title>
-            <Date>{project.Date}  </Date>
-            <Description>{project.Desc}</Description>
+            <Title>{project.title}</Title>
+            <Date>{project.date}  </Date>
+            <Description>{project.description}</Description>
         </Details>
-        <Members>
-            {project.member?.map((member) => (
-                <Avatar src={member.img} />
-                ))}
-        </Members>
+ 
         <Button href={project.github} target="_blank">
-            View Code
+            View 
         </Button>
     </Card>
 

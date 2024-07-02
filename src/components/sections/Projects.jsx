@@ -82,31 +82,7 @@ const CardContainner = styled.div`
   gap:28px;
   flex-wrap:wrap;
 `;
-// const Projects = () => {
-//   const [toggle,setToggle] = useState("all");
 
-//   return (  
-//     <Container id='Projects'>
-//       <Wrapper>
-//         <Title>Projects</Title>
-//         <Desc>Here are some of the projects I have worked on</Desc>
-//         <ToggleButtonGroup>
-//           <ToggleButton active={toggle==="all"} onClick={() => setToggle("all")}>All</ToggleButton>
-//           <Divider/>
-//           <ToggleButton active={toggle==="shopify"} onClick={() => setToggle("shopify")}>Shopify</ToggleButton>
-//           <Divider/>
-
-//           <ToggleButton active={toggle==="wordpress"} onClick={() => setToggle("wordpress")}>Wordpress</ToggleButton>
-
-//         </ToggleButtonGroup>
-//         <CardContainner>{toggle === "all" && 
-//         projects.map((project)=><ProjectCard project={project}/>)}
-//         {projects.filter((item)=>item.category === toggle).map((project)=><ProjectCard project={project}/>)}
-//         </CardContainner>
-//       </Wrapper>
-//       </Container>
-//   )
-// }
 
 
 const Projects = () => {
@@ -127,6 +103,7 @@ const Projects = () => {
           <ToggleButton active={toggle === "shopify"} onClick={() => setToggle("shopify")}>
             Shopify
           </ToggleButton>
+          <Divider />
           <ToggleButton active={toggle === "wordpress"} onClick={() => setToggle("wordpress")}>
             Wordpress
           </ToggleButton>

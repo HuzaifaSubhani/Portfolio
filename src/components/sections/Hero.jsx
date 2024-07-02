@@ -88,15 +88,23 @@ color:${({ theme }) => theme.text_primary};
 @media screen and (max-width:960px){
 text-align:center;
 @media screen and (max-width:640px){
+  display: flex;
+  justify-content: center; 
+  align-items: center;   
 font-size:22px;
 line-height:48px;
-margin-bottom:16px;
+ 
+// margin-left:65px; 
+
 }
 `;
 const Span = styled.div`
 
 cursor:pointer;
-color:${({ theme }) => theme.primary};
+color:${({ theme }) => theme.primary};text-align:center;  
+@media screen and (max-width:640px){
+text-align:center;
+}
 
 `;
 
@@ -171,7 +179,7 @@ height:100%;
 max-width:1360px;justify-content:end;
 -webkit-transform:translate(-50%,-50%);
 transform:translate(-50%,-50%);
- @media screen and (max-width:960px){
+@media screen and (max-width:960px){
 //  justify-content:center;
 //  padding:0px 16px;
 padding-left:50px;
